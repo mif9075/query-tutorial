@@ -1,45 +1,48 @@
 .even {
     background-color: rgb(167, 102, 228);
-    width: 100px;
+    width: 50px;
+    
 }
 
 .odd {
     background-color: pink; 
-    width: 100px;
+    width: 50px;
     
 }
 
 .boxes {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 @media screen and (max-width: 400px) {
 
     .boxes {
-        width: 100px;
+
+        width: 75px;
     }
 }
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .boxes {
-        width: 200px;
+        width: 100px;
     }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
     .boxes {
-        width: 300;
+        width: 200px;
     }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
     .boxes {
-        width: 400;
+        width: 500px;
     }
 }
 @media screen and (min-width: 900px) {
     .boxes {
-        width: 500;
+        width: 1000px;
     }
 }
