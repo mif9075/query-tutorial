@@ -1,36 +1,45 @@
 .even {
     background-color: rgb(167, 102, 228);
-    display: flex;
-    justify-content: space-between;
+    width: 100px;
 }
 
 .odd {
     background-color: pink; 
-    display: flex;
-    justify-content: space-between;
-}
- 
-@media screen and (max-width: 400px) {
-    body { 
-        
-    }
-}   
-
-@media screen and (min-width: 400px) and (max-width: 500px) {
-    body { 
+    width: 100px;
     
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+
+    .boxes {
+        width: 100px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .boxes {
+        width: 200px;
+    }
+
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
-    body { 
-    
+    .boxes {
+        width: 300;
+    }
 }
-
 @media screen and (min-width: 700px) and (max-width: 900px) {
-    body { 
-    
+    .boxes {
+        width: 400;
+    }
 }
 @media screen and (min-width: 900px) {
-    body { 
-    
+    .boxes {
+        width: 500;
+    }
 }
